@@ -4,8 +4,8 @@ describe "Actor" do
   let(:actor) {Actor.new}
   it "has data attributes" do
     danny_pudi = Actor.create(first_name: "Danny", last_name: "Pudi")
-    expect(Actor.find_by(:first_name => "Danny").actor).to eq(danny_pudi)
-    expect(Actor.find_by(:last_name => "Pudi").actor).to eq(danny_pudi)
+    expect(Actor.find_by(:first_name => "Danny")).to eq(danny_pudi)
+    expect(Actor.find_by(:last_name => "Pudi")).to eq(danny_pudi)
   #TODO: implement the tests as described in the it blocks,
   #      and implement the class and migrations required to pass them
 
